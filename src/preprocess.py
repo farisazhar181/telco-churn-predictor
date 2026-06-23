@@ -17,7 +17,7 @@ def preprocess_input(input_dict, feature_columns):
     
     # Get dummies
     categorical_cols = df_raw.select_dtypes(include=['object', 'category']).columns.tolist()
-    df_encoded = pd.get_dummies(df_raw, columns=categorical_cols)
+    df_encoded = pd.get_dummies(df_raw, columns=categorical_cols, drop_first=True)
     
     # Reindex to match the exact model training columns
     df_encoded = df_encoded.reindex(columns=feature_columns, fill_value=0)
