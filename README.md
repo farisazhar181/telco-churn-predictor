@@ -1,6 +1,6 @@
 # Telco Customer Churn Predictor
 
-**Live Demo:** https://your-app.streamlit.app
+**Live Demo:** _(coming soon — deploy link will be updated after Streamlit Cloud deployment)_
 
 This project demonstrates a complete end-to-end machine learning workflow predicting customer churn for a telecommunications company. It covers exploratory data analysis (EDA), feature engineering, model training (Logistic Regression, Random Forest, XGBoost), evaluation, and a deployed Streamlit web application.
 
@@ -30,6 +30,39 @@ The project is built using the following technologies:
 - Streamlit for the interactive web application frontend.
 - Matplotlib and Seaborn for data visualization.
 - SHAP for model explainability.
+
+## Notebooks
+
+| # | Notebook | Description |
+|---|----------|-------------|
+| 1 | [EDA & Preprocessing](notebooks/01_eda_and_preprocessing.ipynb) | Data cleaning, feature engineering, class imbalance analysis |
+| 2 | [Model Training](notebooks/02_model_training.ipynb) | Logistic Regression, Random Forest, XGBoost comparison and selection |
+| 3 | [Evaluation & Explainability](notebooks/03_evaluation_and_explainability.ipynb) | Confusion matrix, ROC-AUC, SHAP global and local explanations |
+
+## Project Structure
+
+```
+telco-churn-predictor/
+├── app.py                  # Streamlit web application
+├── requirements.txt
+├── data/
+│   ├── raw/                # CSV from Kaggle (gitignored)
+│   └── processed/          # Parquet splits (gitignored)
+├── models/
+│   ├── churn_model.joblib
+│   └── feature_columns.joblib
+├── notebooks/
+│   ├── 01_eda_and_preprocessing.ipynb
+│   ├── 02_model_training.ipynb
+│   └── 03_evaluation_and_explainability.ipynb
+├── figures/
+│   ├── confusion_matrix.png
+│   ├── roc_curve.png
+│   └── shap_summary.png
+└── src/
+    ├── preprocess.py
+    └── predict.py
+```
 
 ## Installation and Usage
 
