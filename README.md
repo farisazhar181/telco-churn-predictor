@@ -1,6 +1,6 @@
 # Telco Customer Churn Predictor
 
-**Live Demo:** _(coming soon — deploy link will be updated after Streamlit Cloud deployment)_
+**Live Demo:** [https://kadfygzfk6spvkvfbmjn2o.streamlit.app/](https://kadfygzfk6spvkvfbmjn2o.streamlit.app/)
 
 This project demonstrates a complete end-to-end machine learning workflow predicting customer churn for a telecommunications company. It covers exploratory data analysis (EDA), feature engineering, model training (Logistic Regression, Random Forest, XGBoost), evaluation, and a deployed Streamlit web application.
 
