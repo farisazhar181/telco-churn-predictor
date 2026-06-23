@@ -1,0 +1,27 @@
+# Raw data
+data/raw/*.csv
+
+# Processed data
+data/processed/*.parquet
+
+# Model files
+# DO NOT gitignore models/*.joblib
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+.env
+venv/
+env/
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Planning docs
+*_plan.md
+*_guidelines.md
