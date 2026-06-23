@@ -5,7 +5,6 @@ data/raw/*.csv
 data/processed/*.parquet
 
 # Model files
-# DO NOT gitignore models/*.joblib
 
 # Jupyter
 .ipynb_checkpoints/
